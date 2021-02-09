@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "/aFHckJ/NYKj9wYUAe+FRNFqC8j+DrvT5g1mnML63+Pyytjaj8BKX3g5LP7gQnm+SASOZsB9BkdNcrepIOw4UQ==",
+  "success": true,
+  "projectFilePath": "C:\\Code\\CodeIsKing\\CIK.Assignment2.FizzBuzz\\FizzBuzz\\FizzBuzz.Services\\FizzBuzz.Services.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\edvin.kugelberg\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\edvin.kugelberg\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

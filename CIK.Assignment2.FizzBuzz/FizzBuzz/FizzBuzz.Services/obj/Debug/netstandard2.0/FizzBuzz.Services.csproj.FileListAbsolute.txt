@@ -1,0 +1,12 @@
+C:\Code\CodeIsKing\CIK.Assignment2.FizzBuzz\FizzBuzz\FizzBuzz.Services\bin\Debug\netstandard2.0\FizzBuzz.Services.deps.json
+C:\Code\CodeIsKing\CIK.Assignment2.FizzBuzz\FizzBuzz\FizzBuzz.Services\bin\Debug\netstandard2.0\FizzBuzz.Services.dll
+C:\Code\CodeIsKing\CIK.Assignment2.FizzBuzz\FizzBuzz\FizzBuzz.Services\bin\Debug\netstandard2.0\FizzBuzz.Services.pdb
+C:\Code\CodeIsKing\CIK.Assignment2.FizzBuzz\FizzBuzz\FizzBuzz.Services\bin\Debug\netstandard2.0\FizzBuzz.Models.dll
+C:\Code\CodeIsKing\CIK.Assignment2.FizzBuzz\FizzBuzz\FizzBuzz.Services\bin\Debug\netstandard2.0\FizzBuzz.Models.pdb
+C:\Code\CodeIsKing\CIK.Assignment2.FizzBuzz\FizzBuzz\FizzBuzz.Services\obj\Debug\netstandard2.0\FizzBuzz.Services.csprojAssemblyReference.cache
+C:\Code\CodeIsKing\CIK.Assignment2.FizzBuzz\FizzBuzz\FizzBuzz.Services\obj\Debug\netstandard2.0\FizzBuzz.Services.AssemblyInfoInputs.cache
+C:\Code\CodeIsKing\CIK.Assignment2.FizzBuzz\FizzBuzz\FizzBuzz.Services\obj\Debug\netstandard2.0\FizzBuzz.Services.AssemblyInfo.cs
+C:\Code\CodeIsKing\CIK.Assignment2.FizzBuzz\FizzBuzz\FizzBuzz.Services\obj\Debug\netstandard2.0\FizzBuzz.Services.csproj.CoreCompileInputs.cache
+C:\Code\CodeIsKing\CIK.Assignment2.FizzBuzz\FizzBuzz\FizzBuzz.Services\obj\Debug\netstandard2.0\FizzBuzz.Services.csproj.CopyComplete
+C:\Code\CodeIsKing\CIK.Assignment2.FizzBuzz\FizzBuzz\FizzBuzz.Services\obj\Debug\netstandard2.0\FizzBuzz.Services.dll
+C:\Code\CodeIsKing\CIK.Assignment2.FizzBuzz\FizzBuzz\FizzBuzz.Services\obj\Debug\netstandard2.0\FizzBuzz.Services.pdb

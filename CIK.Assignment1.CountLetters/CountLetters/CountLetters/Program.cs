@@ -13,9 +13,9 @@ namespace CountLetters
 
             var resultModel = new ResultModel();
 
-            //ILetterCounter letterCounter = new LinearCountLettersService();
+            ILetterCounter letterCounter = new LinearCountLettersService();
             //ILetterCounter letterCounter = new LinqCountLettersService();
-            ILetterCounter letterCounter = new RegexCountLettersService();
+            //ILetterCounter letterCounter = new RegexCountLettersService();
 
             letterCounter.Count(input, resultModel);
 
