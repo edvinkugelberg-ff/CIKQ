@@ -1,0 +1,40 @@
+﻿@using CIK.Assignment7.WeatherWebApp.Components.Models;
+@inject HttpClient Http
+
+<h3>WeatherDataTable</h3>
+
+@if (WeatherData == null)
+{
+    <p><em>Loading...</em></p>
+}
+else
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Time</th>
+                <th>Temp. (C)</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var dataPoint in WeatherData.Data)
+            {
+                <tr>
+                    <td>@dataPoint.Time</td>
+                    <td>@dataPoint.Value</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+
+
+@code {
+    private WeatherDataSamplesDto WeatherData;
+
+    protected override async Task OnInitializedAsync()
+    {
+        WeatherData = await Http.GetFromJsonAsync<WeatherDataSamplesDto>("api/weather/data");
+    }
+
+}

@@ -1,0 +1,43 @@
+﻿@page "/fetchdata"
+
+@using CIK.Assignment7.WeatherWebApp.BlazorServer.Data
+@using CIK.Assignment7.WeatherWebApp.BlazorServer.Components.Models
+@inject WeatherForecastService ForecastService
+
+<h1>Weather forecast</h1>
+
+<p>This component demonstrates fetching data from a service.</p>
+
+@if (_weatherData == null)
+{
+    <p><em>Loading...</em></p>
+}
+else
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Time</th>
+                <th>Temp. (C)</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var forecast in _weatherData.Data)
+            {
+                <tr>
+                    <td>@forecast.Time</td>
+                    <td>@forecast.Value</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+
+@code {
+    private WeatherDataSamplesDto _weatherData;
+
+    protected override async Task OnInitializedAsync()
+    {
+        _weatherData = await ForecastService.GetWeatherDataAsync();
+    }
+}
