@@ -20,11 +20,11 @@ namespace CIK.Assignment10.Bingo
                 Console.WriteLine("Pulling new number from bank...");
                 game.NextRound();
 
-                foreach (var row in game.bingoCard)
+                foreach (var row in game.GetCard())
                 {
-                    foreach (var cell in row)
+                    foreach (var number in row)
                     {
-                        Console.Write(cell.isChecked ? "X".PadLeft(3) : cell.Value.PadLeft(3));
+                        Console.Write(number.PadLeft(3));
                     }
                     Console.WriteLine();
                 }

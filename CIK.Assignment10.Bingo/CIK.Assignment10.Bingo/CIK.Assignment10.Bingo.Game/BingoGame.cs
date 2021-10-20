@@ -13,7 +13,7 @@ namespace CIK.Assignment10.Bingo.Game
         private readonly IBingoCardService _bingoCardService;
         private readonly IBingoBankService _bingoBankService;
 
-        public List<List<NumberCell>> bingoCard { get;  private set; }
+        private List<List<NumberCell>> bingoCard;
 
         public BingoGame(int totalRows, int totalCols, IRandom random, IBingoBankService bingoBankService, IBingoCardService bingoCardService)
         {
@@ -31,17 +31,41 @@ namespace CIK.Assignment10.Bingo.Game
             return true;
         }
 
-        public bool NextRound()
+        public int NextRound()
         {
             if(bingoCard == null)
             {
-                return false;
+                return 0;
             }
 
             var nextNumber = _bingoBankService.Pull();
             _bingoCardService.MarkNumber(bingoCard, nextNumber);
 
-            return true;
+            return nextNumber;
+        }
+
+        public List<List<string>> GetCard()
+        {
+            if(bingoCard == null)
+            {
+                return null;
+            }
+
+            var bingoCardStringRepresentation = new List<List<string>>();
+
+            foreach (var row in bingoCard)
+            {
+                var rowString = new List<string>();
+
+                foreach (var cell in row)
+                {
+                    rowString.Add(cell.isChecked ? "X" : cell.Value);
+                }
+
+                bingoCardStringRepresentation.Add(rowString);
+            }
+
+            return bingoCardStringRepresentation;
         }
 
         public bool IsBingo()
